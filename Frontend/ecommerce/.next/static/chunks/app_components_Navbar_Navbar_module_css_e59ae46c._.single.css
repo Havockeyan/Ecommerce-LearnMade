@@ -1,0 +1,107 @@
+/* [project]/app/components/Navbar/Navbar.module.css [app-client] (css) */
+.Navbar-module__4IqnvW__navbar {
+  box-sizing: border-box;
+  background: #f6f6f4;
+  border-bottom: 1px solid #e0e0e0;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  display: flex;
+}
+
+.Navbar-module__4IqnvW__left {
+  align-items: center;
+  gap: 2rem;
+  display: flex;
+}
+
+.Navbar-module__4IqnvW__links {
+  gap: 2rem;
+  display: flex;
+}
+
+.Navbar-module__4IqnvW__links a {
+  color: #222;
+  letter-spacing: .08em;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color .2s;
+}
+
+.Navbar-module__4IqnvW__links a:hover {
+  color: #555;
+}
+
+.Navbar-module__4IqnvW__right {
+  align-items: center;
+  gap: 1.2rem;
+  display: flex;
+}
+
+.Navbar-module__4IqnvW__iconButton {
+  color: #fff;
+  cursor: pointer;
+  background: #222;
+  border: none;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  transition: background .2s, box-shadow .2s;
+  display: flex;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, .03);
+}
+
+.Navbar-module__4IqnvW__iconButton:hover {
+  background: #444;
+}
+
+.Navbar-module__4IqnvW__cartButton {
+  cursor: pointer;
+  background: none;
+  border: none;
+  align-items: center;
+  gap: .5rem;
+  display: flex;
+  position: relative;
+}
+
+.Navbar-module__4IqnvW__cartLabel {
+  color: #fff;
+  z-index: 1;
+  letter-spacing: .08em;
+  background: #222;
+  border-radius: 1.5rem;
+  margin-right: -.5rem;
+  padding: .4rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+}
+
+.Navbar-module__4IqnvW__cartIconWrapper {
+  z-index: 2;
+  background: #fff;
+  border: 3px solid #222;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  margin-left: -1.2rem;
+  display: flex;
+  position: relative;
+}
+
+.Navbar-module__4IqnvW__cartButton:hover .Navbar-module__4IqnvW__cartLabel {
+  background: #444;
+}
+
+.Navbar-module__4IqnvW__cartButton:hover .Navbar-module__4IqnvW__cartIconWrapper {
+  border-color: #444;
+}
+
+/*# sourceMappingURL=app_components_Navbar_Navbar_module_css_e59ae46c._.single.css.map*/
