@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 37, "column": 0}, "map": {"version":3,"sources":["file:///D:/pro/projects/New%20folder/Ecommerce-LearnMade/Frontend/ecommerce/app/page.js"],"sourcesContent":["'use client'\r\nimport Link from 'next/link'\r\nimport React from 'react'\r\n\r\nconst Navbar = () => {\r\n  return (\r\n    <nav className=\"bg-blue-600 text-white px-6 py-4 shadow-md\">\r\n      <div className=\"container mx-auto flex justify-between items-center\">\r\n        <div className=\"text-xl font-bold\">MyApp</div>\r\n        <div className=\"space-x-4\">\r\n          <Link href=\"/\" className=\"hover:underline\">Home</Link>\r\n          <Link href=\"/about\" className=\"hover:underline\">About</Link>\r\n          <Link href=\"/contact\" className=\"hover:underline\">Contact</Link>\r\n        </div>\r\n      </div>\r\n    </nav>\r\n  )\r\n}\r\n\r\nexport default Navbar\r\n"],"names":[],"mappings":";;;;AACA;AACA;AAFA;;;;AAIA,MAAM,SAAS;IACb,qBACE,8OAAC;QAAI,WAAU;kBACb,cAAA,8OAAC;YAAI,WAAU;;8BACb,8OAAC;oBAAI,WAAU;8BAAoB;;;;;;8BACnC,8OAAC;oBAAI,WAAU;;sCACb,8OAAC,4JAAA,CAAA,UAAI;4BAAC,MAAK;4BAAI,WAAU;sCAAkB;;;;;;sCAC3C,8OAAC,4JAAA,CAAA,UAAI;4BAAC,MAAK;4BAAS,WAAU;sCAAkB;;;;;;sCAChD,8OAAC,4JAAA,CAAA,UAAI;4BAAC,MAAK;4BAAW,WAAU;sCAAkB;;;;;;;;;;;;;;;;;;;;;;;AAK5D;uCAEe","debugId":null}}]
+}
