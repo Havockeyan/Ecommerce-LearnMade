@@ -1,103 +1,154 @@
-import Image from "next/image";
+import React from 'react'
 
-export default function Home() {
+const page = () => {
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.js
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <>
+      {/* Header */}
+      <header className="flex justify-between items-center w-full py-3 px-6 text-white h-16 bg-cover bg-center"
+        style={{ backgroundImage: "url('/bg.jpg')" }}
+      >
+        <h1 className='text-white text-2xl font-sans font-semibold'>E-commerce <p className='text-xs'>Developed By Deepak</p></h1>
+        <div className='flex gap-4 text-1xl font-semibold '>
+          <p><span className='hover:bg-black text-white cursor-pointer rounded-2xl py-2 '>Home</span></p>
+          <p><span className='hover:bg-black text-white cursor-pointer rounded-2xl py-2 '>About Us</span></p>
+          <p><span className='hover:bg-black text-white cursor-pointer rounded-2xl py-2 '>Contact</span></p>
+        </div>
+      </header>
+      {/* Sub Header */}
+      <div className='py-10 bg-blue-900 text-white  text-shadow-black text-shadow-2xs'>
+        <h1 className='font-serif text-3xl font-semibold text-align-centre text-center mb-4 underline decoration-teal-200'>🛍️ Why Shop With Us?</h1>
+        <p className='text-center'>Shop with confidence on our platform where you’ll find top-quality products, unbeatable prices, fast delivery, secure payments, and reliable customer support. Enjoy a seamless shopping experience with easy returns, exclusive deals, and a user-friendly interface. Your satisfaction is our top priority—shop smarter, shop better, only with us!</p>
+      </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
+      <h1 className='text-center font-semibold bg-gradient-to-r from-gray-100 to-gray-200 pt-10 font-serif text-3xl underline decoration-black'>Top Products📦</h1>
+
+      {/* Product 1 */}
+      <main className='min-h-screen min-w-fit flex flex-row flex-wrap justify-center items-center gap-15 bg-gradient-to-r from-gray-100 to-gray-200 py-12'>
+        <div className='flex justify-center items-baseline-last py-10'>
+          <div className="bg-white border border-black p-4 box-border w-[300px] rounded-2xl">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="Sample"
+              className="max-w-full max-h-full object-contain mb-2"
             />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <center><p className="inline text-black">
+              This is a responsive e-commerce template built using React and Tailwind CSS, designed by Deepak for modern shopping platforms. <br></br>
+            </p>
+              <button className='bg-black text-white rounded-3xl py-2 mt-4'><span className='hover:bg-red-500 text-white cursor-pointer rounded-3xl py-2.5'>Buy Now</span></button></center>
+          </div>
+        </div>
+
+
+        {/* Product 2 */}
+        <div className='flex justify-center items-baseline-last py-10'>
+          <div className="bg-white border border-black p-4 box-border w-[300px] rounded-2xl">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="Sample"
+              className="max-w-full max-h-full object-contain mb-2"
+            />
+            <center><p className="inline text-black">
+              This is a responsive e-commerce template built using React and Tailwind CSS, designed by Deepak for modern shopping platforms. <br></br>
+            </p>
+              <button className='bg-black text-white rounded-3xl py-2 mt-4'><span className='hover:bg-red-500 text-white cursor-pointer rounded-3xl py-2.5'>Buy Now</span></button></center>
+          </div>
+        </div>
+
+
+        {/* Product 3 */}
+        <div className='flex justify-center items-baseline-last py-10'>
+          <div className="bg-white border border-black p-4 box-border w-[300px] rounded-2xl">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="Sample"
+              className="max-w-full max-h-full object-contain mb-2"
+            />
+            <center><p className="inline text-black">
+              This is a responsive e-commerce template built using React and Tailwind CSS, designed by Deepak for modern shopping platforms. <br></br>
+            </p>
+              <button className='bg-black text-white rounded-3xl  py-2 mt-4 '><span className='hover:bg-red-500 text-white cursor-pointer rounded-3xl py-2.5'>Buy Now</span></button></center>
+          </div>
+        </div>
+
+        {/* Product 4 */}
+        <div className='flex justify-center items-baseline-last py-10'>
+          <div className="bg-white border border-black p-4 box-border w-[300px] rounded-2xl">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="Sample"
+              className="max-w-full max-h-full object-contain mb-2"
+            />
+            <center><p className="inline text-black">
+              This is a responsive e-commerce template built using React and Tailwind CSS, designed by Deepak for modern shopping platforms. <br></br>
+            </p>
+              <button className='bg-black text-white rounded-3xl  py-2 mt-4'><span className='hover:bg-red-500 text-white cursor-pointer rounded-3xl py-2.5'>Buy Now</span></button></center>
+          </div>
+        </div>
+        {/* Product 5 */}
+        <div className='flex justify-center items-baseline-last py-10'>
+          <div className="bg-white border border-black p-4 box-border w-[300px] rounded-2xl">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="Sample"
+              className="max-w-full max-h-full object-contain mb-2"
+            />
+            <center><p className="inline text-black">
+              This is a responsive e-commerce template built using React and Tailwind CSS, designed by Deepak for modern shopping platforms. <br></br>
+            </p>
+              <button className='bg-black text-white rounded-3xl  py-2 mt-4 '><span className='hover:bg-red-500 text-white cursor-pointer rounded-3xl py-2.5'>Buy Now</span></button></center>
+          </div>
+        </div>
+
+        {/* Product 6 */}
+        <div className='flex justify-center items-baseline-last py-10'>
+          <div className="bg-white border border-black p-4 box-border w-[300px] rounded-2xl">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="Sample"
+              className="max-w-full max-h-full object-contain mb-2"
+            />
+            <center><p className="inline text-black">
+              This is a responsive e-commerce template built using React and Tailwind CSS, designed by Deepak for modern shopping platforms. <br></br>
+            </p>
+              <button className='bg-black text-white rounded-3xl  py-2 mt-3 '><span className='hover:bg-red-500 text-white cursor-pointer rounded-3xl py-2.5'>Buy Now</span></button></center>
+          </div>
+        </div>
+
+
+
+        {/* Product 7 */}
+        <div className='flex justify-center items-baseline-last py-10'>
+          <div className="bg-white border border-black p-4 box-border w-[300px] rounded-2xl">
+            <img
+              src="https://picsum.photos/300/200"
+              alt="Sample"
+              className="max-w-full max-h-full object-contain mb-2"
+            />
+            <center><p className="inline text-black">
+              This is a responsive e-commerce template built using React and Tailwind CSS, designed by Deepak for modern shopping platforms. <br></br>
+            </p>
+              <button className='bg-black text-white rounded-3xl  py-2 mt-3'><span className='hover:bg-red-500 text-white cursor-pointer rounded-3xl py-2.5'>Buy Now</span></button></center>
+          </div>
         </div>
       </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+      {/* Contact Info */}
+      <div className=' flex flex-col bg-gray-900 text-white  '>
+        <p className='text-2xl font-semibold text-center underline decoration-white '>Contact</p><br></br>
+        <p className='text-center'>Phone Number: +91 XXXXXXXXXX</p> 
+        <p className='text-center'>Email: xyz@gmail.com</p><br></br>
+       <center> <a href='' className='text-blue-500 hover:underline-offset-0'>Instagram📷 </a>  
+        <a href='' className='text-blue-500 hover:underline-offset-0'>Facebook😆 </a>
+        <a href='' className='text-blue-500 hover:underline-offset-0'>Twitter🕊️ </a></center><br></br>
+        
+        
+      </div>
+      {/* Footer */}
+      <hr className='text-gray-500'></hr>
+      <footer className="bg-gray-900 text-white text-center py-4 mt-auto">
+        <p className="text-sm">&copy; 2025 E-commerce. All rights reserved.</p>
       </footer>
-    </div>
-  );
+    </>
+  )
 }
+
+export default page
