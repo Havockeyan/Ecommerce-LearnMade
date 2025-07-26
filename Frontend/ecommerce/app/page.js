@@ -1,45 +1,16 @@
-"use client";
-import React, { useState } from 'react';
-import Login from './components/Login/Login';
-import Signup from './components/Login/Signup';
+import Image from "next/image";
+import Banner from "./components/Banner";
 
-const Page = () => {
-  const [showSignup, setShowSignup] = useState(false);
+import Footer from "./components/Footer";
 
+import SearchBar from "./components/SearchBar";
+export default function Home() {
   return (
-    <div>
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1rem' }}>
-        <button
-          onClick={() => setShowSignup(false)}
-          style={{
-            marginRight: '1rem',
-            padding: '0.5rem 1rem',
-            background: !showSignup ? '#0070f3' : '#e0e0e0',
-            color: !showSignup ? '#fff' : '#333',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer'
-          }}
-        >
-          Login
-        </button>
-        <button
-          onClick={() => setShowSignup(true)}
-          style={{
-            padding: '0.5rem 1rem',
-            background: showSignup ? '#0070f3' : '#e0e0e0',
-            color: showSignup ? '#fff' : '#333',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer'
-          }}
-        >
-          Signup
-        </button>
-        
-      </div>
-      {showSignup ? <Signup /> : <Login />}
-    </div>
+    <main>
+    <SearchBar />
+    <Banner />
+    <Footer />
+    </main>
   );
 };
 
