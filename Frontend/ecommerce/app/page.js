@@ -3,15 +3,14 @@ import Banner from "./components/Banner";
 
 import Footer from "./components/Footer";
 
-import SearchBar from "./components/SearchBar";
+import AuthForms from "./components/AuthForms";
+
 export default function Home() {
   return (
     <main>
-    <SearchBar />
+    <AuthForms />
     <Banner />
     <Footer />
     </main>
   );
 };
-
-export default Page;
