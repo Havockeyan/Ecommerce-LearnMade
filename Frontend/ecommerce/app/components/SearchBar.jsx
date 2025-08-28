@@ -1,11 +1,17 @@
-"use client";
+'use client';
 import { useState, useRef } from "react";
+import { useRouter } from 'next/navigation';
 
 export default function SearchBar({ onLoginClick, onSignupClick }) {
+  const router = useRouter();
   const [search, setSearch] = useState("");
   const [category, setCategory] = useState("All");
   const [showDropdown, setShowDropdown] = useState(false);
   const inputRef = useRef(null);
+
+  const handleOrderClick = () => {
+    router.push('/orders'); // Navigate to the orders page
+  };
 
   return (
     <div className="w-full flex flex-col items-center py-4 sm:py-6 bg-neutral-100 font-junge">
@@ -73,6 +79,12 @@ export default function SearchBar({ onLoginClick, onSignupClick }) {
             className="px-4 py-2 bg-black text-white rounded-md hover:bg-gray-800 transition-colors font-medium text-sm sm:text-base"
           >
             Sign Up
+          </button>
+          <button
+            onClick={handleOrderClick}
+            className="px-4 py-2 bg-black text-white rounded-md hover:bg-green-700 transition-colors font-medium text-sm sm:text-base"
+          >
+            Orders
           </button>
         </div>
       </div>
